@@ -1,0 +1,284 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  --main-color: rgb(4, 209, 209);
+}
+/* start of header */
+header {
+  background-image: url(./images/view.jpg);
+  background-size: cover;
+  background-position: bottom;
+  height: 50vh;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px;
+}
+header h1 {
+  text-align: center;
+  color: var(--main-color);
+  padding: 0 0 25px;
+}
+
+header p {
+  margin: 0 auto;
+  text-align: center;
+  width: 30%;
+  line-height: 1.4;
+  font-size: 1.1rem;
+}
+
+header nav img {
+  width: 8%;
+}
+
+/* end of header */
+/* start of main */
+/* start of info */
+main .info {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  text-align: center;
+}
+.info article:nth-of-type(2) {
+  box-shadow: 0 6px 5px #eeeeee;
+}
+
+.info i {
+  color: var(--main-color);
+  font-size: 2rem;
+  margin: 15px;
+}
+
+.info h3 {
+  padding: 15px;
+}
+
+.info p {
+  width: 70%;
+  margin: 0 auto;
+  line-height: 1.2;
+}
+
+/* end of info */
+/* start of services */
+.services-sec > h2 {
+  font-size: 4.5em;
+  color: rgba(128, 128, 128, 0.353);
+  text-align: center;
+}
+
+.services-sec > h2 + p {
+  font-size: 1.2em;
+  text-align: center;
+  margin-top: -30px;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8%;
+  padding: 6%;
+}
+
+.services .srv {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.srv i {
+  color: var(--main-color);
+  flex-basis: 100px;
+  font-size: 20px;
+}
+.srv article {
+  margin: 0 0 20px;
+}
+
+.srv h4 {
+  font-size: 1.5em;
+}
+.srv p {
+  margin-top: 10px;
+  line-height: 1.5;
+  font-size: 1.2em;
+}
+
+.services .col3 img {
+  width: fit-content;
+  height: 250px;
+}
+.services .col3 {
+  position: relative;
+}
+
+.services .col3 .image::before {
+  content: "";
+  background-color: black;
+  width: 80px;
+  height: 350px;
+  position: absolute;
+  top: -50px;
+  right: 0;
+  z-index: -1;
+}
+
+/* end of services */
+/* start of portfolio */
+.portfolio {
+  background-color: #f5f5f5a1;
+  margin: 20px;
+  padding: 50px;
+}
+
+.portfolio > h2 {
+  font-size: 4.5em;
+  color: rgba(128, 128, 128, 0.331);
+  text-align: center;
+}
+
+.portfolio > h2 + p {
+  font-size: 1.2em;
+  text-align: center;
+  margin-top: -30px;
+}
+.port {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 15px;
+  padding: 2%;
+}
+
+.port .col {
+  width: 28%;
+}
+
+.port .col img {
+  width: 100%;
+  height: 40vh;
+}
+
+.port article {
+  padding: 2%;
+  background-color: rgb(255, 255, 255);
+}
+
+.portfolio button {
+  padding: 0.5%;
+  margin: 0 auto;
+  display: block;
+  background-color: white;
+}
+/* end of portfolio */
+/* start of about */
+.about > h2 {
+  font-size: 4.5em;
+  color: rgba(128, 128, 128, 0.331);
+  text-align: center;
+}
+
+.about > h2 + p {
+  font-size: 1.2em;
+  text-align: center;
+  margin-top: -30px;
+}
+.ab {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1%;
+  padding: 2% 20%;
+}
+.ab article {
+  width: 50%;
+  
+}
+
+.ab p:first-of-type {
+  line-height: 1.8;
+  margin-bottom:3rem;
+  font-weight: 800;
+
+}
+
+.ab p:nth-of-type(2){
+  line-height: 1.5;
+  margin-top: 1rem;
+}
+
+.ab hr {
+  width: 50%;
+  height: 4px;
+  outline: none;
+  background-color: var(--main-color);
+}
+
+.ab img {
+  width: 15vw;
+  height: 25vh;
+}
+
+.ab .image {
+  position: relative;
+}
+.ab .image::after{
+  content: "L";
+  font-size: 18rem;
+  top: -40%;
+  left: 85%;
+  position: absolute;
+  z-index: -1;
+  color: var(--main-color);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 800;
+
+}
+/* end of about */
+/* start of footer */
+footer {
+  background-color: #eeeeee;
+  margin: 1%;
+}
+footer > h2 {
+  font-size: 4.5em;
+  color: rgba(128, 128, 128, 0.331);
+  text-align: center;
+}
+
+footer > h2 + p {
+  font-size: 1.2em;
+  text-align: center;
+  margin-top: -30px;
+}
+.foot {
+  padding: 5% 15%;
+}
+.foot p:first-of-type {
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: -1px;
+  color: rgb(5, 47, 30);
+ 
+}
+
+.foot p:nth-of-type(2) {
+  font-size: 2.5rem;
+  padding: 2%;
+  color: var(--main-color);
+  font-weight: 600;
+}
+
+footer .icons {
+  background-color: rgb(5, 47, 30);
+  text-align: center;
+  padding: 1.4%;
+}
+footer .icons i {
+  color: #eeeeee;
+  font-size: 1.5rem;
+  padding-left: 1%;
+}
+/* end of footer */
